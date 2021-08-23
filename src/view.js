@@ -11,11 +11,16 @@ export default class View {
     await this.sprite.load();
   };
 
-  // <- Здесь будет обновляться представление. Метод который вызывает методы находящиеся в нём
+  // Здесь будет обновляться представление. Метод который вызывает методы находящиеся в нём
   update(world) {
     this.clearScreen();
-		this.renderPlayer1Tank(world.player1Tank);
+    this.renderLevel(world.level);
+		// this.renderPlayer1Tank(world.player1Tank);
 	};
+
+  renderLevel(level) {
+    console.log(level);
+  };
 
 	renderPlayer1Tank(player1Tank) {
 		this.context.drawImage(

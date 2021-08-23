@@ -10,6 +10,8 @@ export default class Game {
 
 	async init() { // Инициализируем метод init у view
 		this.view.init();
+		// метод иницилизции (загружаем первый уровень)
+		this.world.level = this.levels[0];
 
 		document.addEventListener('keydown', event => {
 			event.preventDefault();

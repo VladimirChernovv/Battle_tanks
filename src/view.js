@@ -20,7 +20,7 @@ export default class View {
 	renderPlayer1Tank(player1Tank) {
 		this.context.drawImage(
       this.sprite.image,
-      0, 0, 32, 32,
+      ...player1Tank.sprite,
       player1Tank.x, player1Tank.y, 32, 32
     );
 	};

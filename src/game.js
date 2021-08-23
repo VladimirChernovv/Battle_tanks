@@ -5,7 +5,6 @@ export default class Game {
 		this.view = view;
 		this.levels = levels;
 		this.activeKeys = new Set();
-		
 		this.loop = this.loop.bind(this);
 	};
 
